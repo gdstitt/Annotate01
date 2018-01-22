@@ -19,6 +19,9 @@ public class Annotate01 {
         Annotation[] annotations = Annotate01.class.getAnnotations();
         System.out.println("The number of Annotations \"present\" on this object is: " +
                 annotations.length);
+        for(Annotation annotation : annotations) {
+            System.out.println("Annotation :" + annotation.toString());
+        }
     }
     
 }
